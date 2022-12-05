@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateUsersTable extends Migration
 {
+
+    // 参照させたいSQLのテーブル名を指定
+    protected $table = 'todos';
+
     /**
      * Run the migrations.
      *
@@ -19,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->integer('status')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -32,5 +37,8 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        Schema::table('users', function (Blueprint $table) {
+
+        });
     }
 }

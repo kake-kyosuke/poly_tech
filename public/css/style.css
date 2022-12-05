@@ -1,0 +1,135 @@
+h1 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #0084ff;/*左線*/
+}
+
+/*サイドバーメイン関連*/
+html{
+    height:100%;
+}
+body {
+    font-family:'Noto Sans JP',sans-serif;
+    background-color:#f6f5f4;
+}
+.side {
+    background-color:#f8f8f8;
+    width:15%;
+    height:auto;
+    
+    text-align:center;
+    border-right: groove 2px;
+} 
+.content {
+    background-color:#ffffff;
+    width: 85%;
+    height:100%;
+    
+    margin: 50px;
+    /*text-align:center;*/
+    /* margin-left:10px;サイドバーとメインコンテンツの間に隙間をあけた */
+}
+article {
+    display:flex;/*サイドバーとメインコンテンツを横並びにする指定をした*/
+}
+
+.backg {
+    background-color:#f8f8f8;
+    padding: 20px;
+    border: 1px solid;
+}
+.backg2 {
+    padding: 20px 0px;
+    padding-right: 10px;
+}
+
+.bar { /*上の黒いバー*/
+    color: rgb(255, 255, 255);
+    background-color:#000000;
+    font-size: 20px;
+    padding: 8px
+}
+.bar2 {
+    color: rgb(255, 255, 255);
+}
+
+.button1 { /*文字黒*/
+    width: 55px;
+    height: 35px;
+    border-radius:3px;
+    border: none;
+    margin-right: 10px;
+}
+.button2 { /*文字白*/
+    color: #FFF;
+    width: 55px;
+    height: 35px;
+    border-radius:3px;
+    border: none;
+    margin-right: 10px;
+}
+.button3 { /*青ボタンみたいな表示*/
+    color: #FFF;
+    background-color:#0099ff;
+    width: auto;
+    height: 35px;
+    border-radius:3px;
+    border: none;
+    text-align:center;
+    line-height: 32px;
+}
+.button3_1 { /*青ボタン（本物）*/
+    color: #FFF;
+    background-color:#0099ff;
+    width: auto;
+    height: 35px;
+    border-radius:3px;
+    border: none;
+    text-align:center;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+.error_main {
+    color: #FFF;
+    width: 402px;
+    height: 35px;
+    background-color:#ff3434;
+    border-radius:3px; /*背景の丸み*/
+    line-height: 32px; /*文字の高さ*/
+    padding-left: 10px; /*左何pxから表示するか*/
+}
+.error_sub {
+    color: #ff3434;
+}
+
+.required { /*入力時の必須を表示*/
+    content: "必須";
+    background-color: #ff3434;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 10px;
+    padding: 3px 7px;
+    margin: 0px 5px;
+    line-height: 1;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.pagination { /*ページネーション*/
+    justify-content: right;
+}
+
+.right-aligned { /*表示件数*/
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.right-aligned2 { 
+    float: right;
+}
